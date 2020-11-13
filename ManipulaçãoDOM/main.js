@@ -6,6 +6,17 @@ const keys = document.querySelectorAll(".key")
 
 function playNote(event){
     let audioKeyCode = getKeyCode(event)
+
+    const key = document.querySelector(`.key[data-key="${audioKeyCode}"]`)
+
+    const cantFoundAnyKey = !key
+
+    if(!cantFoundAnyKey){
+        return
+    }
+
+    //play audio
+
 }
 
 
@@ -20,6 +31,7 @@ function getKeyCode(event){
         keyCode = event.target.dataset.key
     }
 
+    return keyCode
 }
 
 // click with mouse
