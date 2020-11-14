@@ -3,7 +3,20 @@ body {
   color: orange;
 }
 
+.container {
+  -webkit-box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.6);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
 .container p {
+  -webkit-box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.6);
+  background-color: red;
+  height: 100px;
+  width: 100px;
   color: blue;
 }
 /*# sourceMappingURL=main.css.map */
