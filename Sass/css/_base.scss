@@ -7,5 +7,17 @@
 $colors: blue, red, yellow;
 
 @each $color in $colors{
-    .#{$color}-text { color: $color; }
+    .#{$color}-text { color: darken($color,50); }
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    @extend .flex;
+    flex-direction: column;
+    height: 100%;
 }
