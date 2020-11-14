@@ -1,2 +1,35 @@
+$primary-color: #efddc3;
+
+@mixin boundaries($isAuto: true){
+    width: 90%;
+    max-width: 980px;
+    @if $isAuto{
+        margin: auto;
+    }
+}
+
+@function set-text-color($color){
+    @if lightness($color) > 70 {
+        @return #333;
+    }
+    @else{
+        @return white;
+    }
+}
+
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import '_header';
 @import '_base';
+@import '_button';
+@import '_hero';
+@import '_main';
+@import '_cards';
+@import '_modal';
+@import '_form';
+@import '_responsive';
 
