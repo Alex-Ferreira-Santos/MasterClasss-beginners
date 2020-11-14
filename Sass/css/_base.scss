@@ -1,39 +1,11 @@
-$text-color: orange;
-
-@mixin box-shadow($color){
-    box-shadow: 3px 3px 4px 1px rgba($color, 0.6)
-}
-
-@mixin text-effect($val){
-    @if $val == danger{
-        color: red;
-    }
-    @else if $val == alert{
-        color: yellow;
-    }
-    @else{
-        color:black;
+@for $i from 1 through 5{
+    .text-#{$i}{
+        font-size: 15px * $i;
     }
 }
 
-body{
-    background-color: #7159c1;
-    color: $text-color;
-}
+$colors: blue, red, yellow;
 
-.container{
-    @include box-shadow(rgba(0,0,0,0.6));
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    $text-color: blue;
-
-    p{
-        @include box-shadow(rgba(0,0,0,0.6));
-        background-color: gray;
-        height: 100px;
-        width: 100px;
-        color: $text-color;
-        @include text-effect(none);
-    }
+@each $color in $colors{
+    .#{$color}-text { color: $color; }
 }
