@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link 
+      rel="stylesheet" 
+      href="responsive.css"
+      media="screen and (max-width: 768px)"
+    >
+
+    <link rel="stylesheet" href="print.css" media="print">
   </head>
   <body>
     <header>
@@ -11,7 +21,7 @@
           src="./images/logo-rocketseat.svg"
           alt="Rocketseat"
         />
-        <div class="menu-section">
+        <div class="menu-section on">
           <div class="menu-toggle">
             <div class="one"></div>
             <div class="two"></div>
@@ -62,8 +72,15 @@
       <section class="cards">
         <div class="card">
           <div class="image">
-            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+            <img src="https://i.ytimg.com/vi/GykTLqODQuU/mqdefault.jpg" />
           </div>
+          <!--<picture class="image" alt="Imagem">
+            <source media="(min-width: 768px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg">
+
+            <source media="(min-width: 320px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg">
+
+            <source media="(min-width: 10px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/masresdefault.jpg">
+          </picture>-->
           <div class="content">
             <p class="title text--medium">
               Formulário Animado com JS puro e CSS Animation | Mayk Brito
@@ -135,5 +152,6 @@
     </div>
 
     <script src="scripts.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
