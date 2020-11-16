@@ -13,7 +13,7 @@ $primary-color: #efddc3;
         @return #333;
     }
     @else{
-        @return white;
+        @return rgb(53, 47, 47);
     }
 }
 
