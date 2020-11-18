@@ -1,0 +1,19 @@
+div{
+    background-color: red;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+
+    width: 500px;
+    height: 100px;
+
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-bottom: 700px;
+
+    box-sizing: border-box;
+}
+
+div.content{
+    
+}
