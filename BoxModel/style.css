@@ -1,19 +1,9 @@
-div{
+span{
     background-color: red;
-    font-size: 28px;
+    display: inline;
     color: white;
-    text-align: center;
-
-    width: 500px;
-    height: 100px;
-
-    padding-top: 100px;
-    padding-right: 200px;
-    padding-bottom: 700px;
-
+    margin-top: 200px;
+    padding-top: 50px;
     box-sizing: border-box;
-}
 
-div.content{
-    
 }
